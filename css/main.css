@@ -10971,15 +10971,23 @@ body {
   font-family: "Questrial", sans-serif;
   line-height: 1;
 }
-#showcase h3, #showcase .h3 {
-  font-weight: 300;
-}
 #showcase .btn-book {
   border-radius: 2rem;
 }
 
-.amenities h3, .amenities .h3 {
+#showcase h3, #showcase .h3,
+.amenities h3,
+.amenities .h3,
+.quotes h3,
+.quotes .h3,
+.locations h3,
+.locations .h3 {
   text-transform: uppercase;
+  font-weight: 300;
+}
+
+.quotes i {
+  opacity: 0.5;
 }
 
 @media (max-width: 48em) {
