@@ -1,0 +1,76 @@
+//Default overrides
+
+@import "custom";
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+  font-weight: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 6;
+
+  a {
+    font-weight: 100;
+  }
+
+  .nav-link:hover {
+    transition: border-bottom 3s ease-in;
+    border-bottom: 1px solid white;
+  }
+}
+
+#showcase {
+  background: url("../images/tent-bg.jpg") center bottom / cover no-repeat;
+  min-height: 750px;
+  position: relative;
+
+  .header {
+    z-index: 2;
+  }
+
+  #overlay {
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  h1 {
+    font-family: "Questrial", sans-serif;
+    line-height: 1;
+  }
+  h3 {
+    font-weight: 300;
+  }
+
+  .btn-book {
+    border-radius: 2rem;
+  }
+}
+
+.amenities {
+  h3 {
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 48em) {
+  .navbar {
+    .nav-link:hover {
+      border-bottom: none;
+    }
+  }
+
+  #showcase {
+    min-height: 500px;
+  }
+}
